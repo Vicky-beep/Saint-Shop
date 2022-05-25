@@ -1,0 +1,69 @@
+:root {
+    --ff-1: "Cinzel Decorative", cursive;
+    --ff-2: "Lato", sans-serif;
+    --ff-3: "Merriweather", serif;
+  
+    /* color pallette */
+    /* Color Theme Swatches in Hex */
+    --light-pink: #e3e6f3;
+    --dark-pink: #bf5a75;
+    --pink: #f2a7bb;
+    --brown: #8c4014;
+    --light: #f2f2f2;
+  }
+  #hero {
+      background-image: url(../img/about/banner.png);
+      height: 40vh;
+      width: 100%;
+      background-size: cover;
+      background-position: top 25% right 50%;
+      padding: 0px 80px;
+     text-align: center;
+    }
+    
+   #hero h2, #hero p{
+       color: white;
+      
+      margin: 0px auto;
+   }
+   #about-head{
+       display: flex;
+       align-items: center;
+   }
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-video{
+    text-align: center;
+}
+#about-video .video{
+    width: 70%;
+    height: auto;
+    margin:30px auto;
+}
+#about-video .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:477px) {
+    #about-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #about-head img{
+        width: 100%;
+    }
+    #about-video .video{
+        width: 100%;
+        
+    }
+}
